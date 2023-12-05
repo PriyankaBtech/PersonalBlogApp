@@ -1,10 +1,10 @@
-import envImports from "../envImports/envImports"
-import { Client, Account, ID } from "appwrite"
+import envImports from "../envImports/envImports";
+import { Client, Account, ID } from "appwrite";
 
 
 export class AuthService {
-    client = new Client()
-    account
+    client = new Client();
+    account;
 
     constructor() {
         this.client
@@ -42,7 +42,7 @@ export class AuthService {
         try {
             return await this.account.get()
         } catch (error) {
-            console.log("Error :", error)
+            console.log("Appwrite serive :: getCurrentUser :: error", error);
         }
 
         return null
@@ -53,7 +53,7 @@ export class AuthService {
         try {
             await this.account.deleteSessions()
         } catch (error) {
-            console.log("Error :", error)
+            console.log("Appwrite serive :: logout :: error", error);
         }
     }
 }
