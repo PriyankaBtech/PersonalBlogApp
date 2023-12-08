@@ -4,6 +4,7 @@ import Container from './Container/Container';
 import Logoutbutton from './Header/Logoutbutton';
 import Logo from './Logo';
 import Button from './Button';
+import Input from './Input';
 
 export { 
     Header,
@@ -11,5 +12,6 @@ export {
     Container,
     Logoutbutton,
     Logo,
-    Button
+    Button,
+    Input,
 }
