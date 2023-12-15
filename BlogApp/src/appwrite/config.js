@@ -15,83 +15,83 @@ export class DatabaseService{
     }
     
     // Create Post
-    async createPost({Title, Slug, Content, Image, Status, UserID}) {
+    async createPost({title, slug, content, image, status, userId}) {
         try {
             return await this.databases.createDocument(
                 envImports.appwriteDatabaseId,
                 envImports.appwriteCollectionId,
-                Slug,
+                slug,
 
                 {
-                    Title,
-                    Content,
-                    Image,
-                    Status,
-                    UserID,
+                    title,
+                    content,
+                    image,
+                    status,
+                    userId,
                 }
             )
             
         } catch (error) {
-            console.log("Error :", error)
+            console.log("Appwrite serive :: createPost :: error", error);
             
         }
 
     }
 
     // Update Post
-    async updatePost( Slug, {Title, Content, Image, Status}) {
+    async updatePost(slug, {title, content, image, status}) {
         try {
             return await this.databases.updateDocument(
                 envImports.appwriteDatabaseId,
                 envImports.appwriteCollectionId,
-                Slug,
+                slug,
 
                 {
-                    Title,
-                    Content,
-                    Image,
-                    Status
+                    title,
+                    content,
+                    image,
+                    status
                 }
             )
             
         } catch (error) {
-            console.log("Error", error)
+            console.log("Appwrite serive :: updatePost :: error", error);
         }
     }
 
     // Delete Post
-    async deletePost(Slug) {
+    async deletePost(slug) {
         try {
             await this.databases.deleteDocument(
                 envImports.appwriteDatabaseId,
                 envImports.appwriteCollectionId,
-                Slug            
+                slug            
             )
             return true
 
         } catch (error) {
-            console.log("Error", error);
+            console.log("Appwrite serive :: deletePost :: error", error);
             return false
         }
     }
 
     // Read Post
-    async getPost(Slug) {
+    async getPost(slug) {
         try {
             return await this.databases.getDocument(
                 envImports.appwriteDatabaseId,
                 envImports.appwriteCollectionId,
-                Slug            
+                slug            
             )
 
         } catch (error) {
-            console.log("Error", error);
+            console.log("Appwrite serive :: getPost :: error", error);
             return false
         }
     }
 
     // Read Posts
-    async getPosts(queries = [Query.equal("Status", "active")]) {
+    async getPosts(queries = [Query.equal("status", "active")]) {
         try {
             return await this.databases.listDocuments(
                 envImports.appwriteDatabaseId,
@@ -100,7 +100,7 @@ export class DatabaseService{
             )
 
         } catch (error) {
-            console.log("Error", error);
+            console.log("Appwrite serive :: getPosts :: error", error);
             return false
         }
     }
@@ -115,7 +115,7 @@ export class DatabaseService{
             )
 
         } catch (error) {
-            console.log("Error", error);
+            console.log("Appwrite serive :: uploadFile :: error", error);
             return false
         }
     }
@@ -130,7 +130,7 @@ export class DatabaseService{
             return true
 
         } catch (error) {
-            console.log("Error", error);
+            console.log("Appwrite serive :: deleteFile :: error", error);
             return false
         }
     }
