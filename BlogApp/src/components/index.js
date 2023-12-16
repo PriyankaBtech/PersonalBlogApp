@@ -9,9 +9,10 @@ import RTE from './RTE';
 import Signup from "./Signup";
 import Login from "./Login";
 import Button from "./Button";
-import PostForm from "./PostForm/PostForm";
-import Card from "./Card";
 import AuthLayout from "./AuthLayout";
+import PostForm from "./PostForm/PostForm";
+import Post from '../pages/Post';
+import Card from "./Card";
 import Input from "./Input";
 
 export { 
@@ -21,6 +22,7 @@ export {
     Logoutbutton,
     Logo,
     Button,
+    AuthLayout,
     Input,
     RTE,
     Signup,
@@ -28,5 +30,6 @@ export {
     Button,
     PostForm,
     Card,
+    Post
 
 }
