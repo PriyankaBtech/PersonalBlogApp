@@ -14,7 +14,7 @@ function Login() {
     const {register, handleSubmit} = useForm()
     const [error, setError] = useState("")
 
-    const login = () => {
+    const login = async(data) => {
         setError("")
         try {
             const session = await authService.login(data)
@@ -52,7 +52,7 @@ function Login() {
                     <div className='space-y-5'>
 
                         {/* Email Input */}
-                        <input 
+                        <Input 
                         label="Email: "
                         placeholder="Enter your email"
                         type="email"
@@ -66,7 +66,7 @@ function Login() {
                         />
 
                         {/* Password Input */}
-                        <input 
+                        <Input 
                         lable="Password : "
                         placeholder="Enter your password"
                         type="password"
@@ -76,10 +76,11 @@ function Login() {
                         />
 
                         {/* Form Button */}
-                        <button
+                        <Button
                         type="submit"
                         className="w-full"
-                        >Sign in</button>
+                        >Sign in
+                        </Button>
                     </div>
                 </form>
 
