@@ -1,5 +1,6 @@
+import { Client, Databases, ID, Query, Storage } from "appwrite";
+
 import envImports from "../envImports/envImports";
-import { Client, ID, Databases, Storage, Query } from "appwrite";
 
 export class DatabaseService{
     client = new Client();

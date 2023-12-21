@@ -1,5 +1,6 @@
+import { Account, Client, ID } from "appwrite";
+
 import envImports from "../envImports/envImports";
-import { Client, Account, ID } from "appwrite";
 
 
 export class AuthService {

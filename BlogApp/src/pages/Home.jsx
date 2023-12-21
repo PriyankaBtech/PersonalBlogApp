@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
+
 import appwriteDbService from "../appwrite/config"
-import {Container, Card} from '../components'
+import {Card,Container} from '../components'
 
 function Home() {
     const [posts, setPosts] = useState([])

@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react'
-import { Container, Card } from '../components'
+import React, { useEffect,useState } from 'react'
+
 import appwriteDbService from "../appwrite/config"
+import { Card,Container } from '../components'
 
 function AllPosts() {
     const [posts, setPosts] = useState([])
