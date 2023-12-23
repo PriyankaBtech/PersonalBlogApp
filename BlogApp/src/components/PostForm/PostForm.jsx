@@ -1,9 +1,10 @@
 import React, { useCallback } from "react";
 import { useForm } from "react-hook-form";
-import { Button, Input, RTE, Select } from "../index";
-import appwriteDbService from "../../appwrite/config";
-import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
+import appwriteDbService from "../../appwrite/config";
+import { Button, Input, RTE, Select } from "../index";
 
 export default function PostForm({ post }) {
   const { register, handleSubmit, watch, setValue, control, getValues } = useForm({
@@ -73,26 +74,27 @@ export default function PostForm({ post }) {
   return (
       <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
           <div className="w-2/3 px-2">
-              <Input
-                  label="Title :"
-                  placeholder="Title"
-                  className="mb-4"
-                  {...register("title", { required: true })}
-              />
-              <Input
-                  label="Slug :"
-                  placeholder="Slug"
-                  className="mb-4"
-                  {...register("slug", { required: true })}
-                  onInput={(e) => {
-                      setValue("slug", slugTransform(e.currentTarget.value), { shouldValidate: true });
-                  }}
-              />
-              <RTE label="Content :" name="content" control={control} defaultValue={getValues("content")} />
+            <div className="w-3/5 pb-8 ml-10">
+                <Input
+                    label="Title"
+                    placeholder="Title"
+                    className="mb-5"
+                    {...register("title", { required: true })}
+                />
+                <Input
+                    placeholder="Slug"
+                    className="mb-5"
+                    {...register("slug", { required: true })}
+                    onInput={(e) => {
+                        setValue("slug", slugTransform(e.currentTarget.value), { shouldValidate: true });
+                    }}
+                />
+             </div>
+            <RTE label="Content" name="content" control={control} defaultValue={getValues("content")} />
           </div>
           <div className="w-1/3 px-2">
               <Input
-                  label="Image :"
+                  label="Image"
                   type="file"
                   className="mb-4"
                   accept="image/png, image/jpg, image/jpeg, image/gif"
@@ -114,7 +116,7 @@ export default function PostForm({ post }) {
                   {...register("status", { required: true })}
               />
               <Button type="submit" bgColor={post ? "bg-green-500" : undefined} className="w-full">
-                  {post ? "Update" : "Submit"}
+                  {post ? "Update" : "Create"}
               </Button>
           </div>
       </form>
