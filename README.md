@@ -28,11 +28,15 @@ npm install
 npm run dev
 ```
 
+
+
 ### Add Plugins and Dependencies
 
 ```
 npm install @reduxjs/toolkit @tinymce/tinymce-react appwrite eslint-plugin-simple-import-sort html-react-parser react-redux react-router-dom react-hook-form
 ```
+
+
 
 ### Setup instructions for tailwindcss
 
@@ -67,6 +71,7 @@ npx tailwindcss init
 ```
 [require("daisyui"), require("@tailwindcss/line-clamp")]
 ```
+
 
 
 ### Configure auto import sort eslint
