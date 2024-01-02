@@ -5,7 +5,7 @@ import Card from "./Card";
 import Container from './Container/Container';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
-import Logoutbutton from './Header/Logoutbutton';
+import Logoutbutton from './Header/LogoutButton';
 import Input from './Input';
 import Login from "./Login";
 import Logo from './Logo';
