@@ -1,6 +1,23 @@
 # Blog Web App
 
-A simple blog web app using Appwrite(backend as service). In this app you can easily create, read, update, and delete blog posts (CRUD operations). This app also includes features like user authentication (signin, signup, logout) and authentication-based routing with user friendly interface.
+Developed a user-friendly blog web app using React, offering seamless Create, Read, Update, and Delete (CRUD) functionalities for blog posts. Implemented robust authentication features, including sign-in, sign-up, and logout, along with user-friendly authentication-based routing for a smooth and intuitive interface.
+
+Link : https://advance-blog-app.vercel.app/
+
+### Dashboard
+![Screenshot (817)](https://github.com/PriyankaBtech/JavaScript_Fundamentals/assets/109729930/f7d1ac56-6fbb-4733-ba0f-3dbf533add63)
+
+### Sign-up Page
+![Screenshot (816)](https://github.com/PriyankaBtech/JavaScript_Fundamentals/assets/109729930/510d26df-926b-47af-9766-ad32ceb19382)
+
+### Sign-in Page
+![Screenshot (815)](https://github.com/PriyankaBtech/JavaScript_Fundamentals/assets/109729930/cc9bc192-a536-4ac9-a1c6-91b1ecfc70df)
+
+
+## Features 
+
+
+
 
 
 ### Setup Instructions
