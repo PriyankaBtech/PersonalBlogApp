@@ -28,6 +28,7 @@ Link : https://advance-blog-app.vercel.app/
 
 ## Technologies 
 - React(vite)
+- Tailwind CSS
 - Appwrite(backend as service)
 - React-Router-Dom
 - React-Hook-Form
