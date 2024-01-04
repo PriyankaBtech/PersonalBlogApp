@@ -1,6 +1,6 @@
 # Blog Web App
 
-Developed a user-friendly blog web app using React, offering seamless Create, Read, Update, and Delete (CRUD) functionalities for blog posts. Implemented robust authentication features, including sign-in, sign-up, and logout, along with user-friendly authentication-based routing for a smooth and intuitive interface.
+Developed a user-friendly personal blog web app using React, offering seamless Create, Read, Update, and Delete (CRUD) functionalities for blog posts. Implemented robust authentication features, including sign-in, sign-up, and logout, along with user-friendly authentication-based routing for a smooth and intuitive interface.
 
 Link : https://advance-blog-app.vercel.app/
 
@@ -14,9 +14,27 @@ Link : https://advance-blog-app.vercel.app/
 ![Screenshot (815)](https://github.com/PriyankaBtech/JavaScript_Fundamentals/assets/109729930/cc9bc192-a536-4ac9-a1c6-91b1ecfc70df)
 
 
+
 ## Features 
+- Signup
+- Login
+- Logout
+- CRUD operation of Text
+- Set Backend and Database (Appwrite)
+- Redux
+- Routing/Auth Rounting
+- File Handling
 
 
+## Technologies 
+- React(vite)
+- Appwrite(backend as service)
+- React-Router-Dom
+- React-Hook-Form
+- Redux Toolkit(RTK)
+- Tinymce-react
+- React-parser
+- Eslint
 
 
 
@@ -120,6 +138,11 @@ plugins: [... , 'simple-import-sort']
         "source.fixAll.eslint": true
     }
 ```
+
+
+## Acknowledgement
+
+The project was inspired by the Medium website. This project was created with guidance from the "Chai aur Code" YouTube channel. The Person who help me to create this project is Hitesh Choudhary.
 
 
 
